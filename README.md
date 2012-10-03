@@ -4,11 +4,11 @@ is_strict_weak_ordering
 Utilities for certifying whether a binary relation on a set is a [strict weak ordering](http://en.wikipedia.org/wiki/Strict_weak_ordering).
 
 Sometimes we'd like to sort a dataset with respect to a user-defined comparison function. However, the behavior of algorithms such as `std::sort` are only
-defined for relations which have the "strict weak" property: they must be
+defined for relations which have the "strict weak" property: they must have
 
-  * [irreflexive](http://en.wikipedia.org/wiki/Reflexive_relation)
-  * [asymmetric](http://en.wikipedia.org/wiki/Asymmetric_relation)
-  * [transitive](http://en.wikipedia.org/wiki/Transitive_relation)
+  * [irreflexivity](http://en.wikipedia.org/wiki/Reflexive_relation)
+  * [asymmetry](http://en.wikipedia.org/wiki/Asymmetric_relation)
+  * [transitivity](http://en.wikipedia.org/wiki/Transitive_relation)
   * transitivity of equivalence
 
 Parallel implementations of sorting algorithms such as `thrust::sort` often depend critically on this property.
