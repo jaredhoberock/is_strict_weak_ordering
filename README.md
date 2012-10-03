@@ -11,7 +11,7 @@ defined for relations which have the "strict weak" property: they must have
   * [transitivity](http://en.wikipedia.org/wiki/Transitive_relation)
   * transitivity of equivalence
 
-Parallel implementations of sorting algorithms such as `thrust::sort` often depend critically on this property.
+While common sequential implementations of sorting algorithms may yield the expected result with a user-defined relation with subtle problems, parallel implementations of sorting algorithms such as `thrust::sort` often depend critically on the strict weak property.
 
 For a given dataset and a binary relation on that set, we can certify whether or not the binary relation is a strict weak ordering:
 
