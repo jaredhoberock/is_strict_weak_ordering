@@ -1,7 +1,7 @@
 is_strict_weak_ordering
 =======================
 
-Sometimes we'd like to sort a dataset with respect to a user-defined comparison function. However, the behavior of algorithms such as `std::sort` are only
+Sometimes we'd like to sort a dataset with respect to a user-defined comparison function. However, the behavior of algorithms such as `std::sort` is only
 defined for relations which are ["strict weak"](http://en.wikipedia.org/wiki/Strict_weak_ordering) orderings: they must have
 
   * [irreflexivity](http://en.wikipedia.org/wiki/Reflexive_relation)
